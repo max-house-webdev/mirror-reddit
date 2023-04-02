@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ActionButton /> should render with textContent type=button class=Button Button_text textContent=Поделиться 1`] = `
+<button
+  className="undefined"
+  onClick={[Function]}
+  type="button"
+>
+  <test-file-stub />
+  Поделиться
+</button>
+`;
+
+exports[`<ActionButton /> should render with textContent type=button class=Button Button_text textContent=Сохранить 1`] = `
+<button
+  className="undefined"
+  onClick={[Function]}
+  type="button"
+>
+  <test-file-stub />
+  Сохранить
+</button>
+`;
+
+exports[`<ActionButton /> should render without textContent type=button class=Button 1`] = `
+<button
+  className=""
+  onClick={[Function]}
+  type="button"
+>
+  <test-file-stub />
+</button>
+`;

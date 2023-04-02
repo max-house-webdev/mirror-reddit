@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Spinner /> should match snapshot 1`] = `
+<svg
+  viewBox="0 0 50 50"
+>
+  <circle
+    cx="25"
+    cy="25"
+    fill="none"
+    r="20"
+    strokeWidth="5"
+  />
+</svg>
+`;

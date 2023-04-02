@@ -1,0 +1,62 @@
+@import '../../../assets/scss/base/colors.scss';
+
+.container {
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  padding: 0;
+}
+
+.menuButton {
+  width: 31px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 31px;
+
+  &:hover {
+    background-color: $greyEC;
+  }
+
+  &:focus-visible {
+    outline: $orange solid 1px;
+  }
+
+  &:active {
+    background-color: $greyEC;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .container {
+    order: 2;
+
+    display: flex;
+    flex-basis: 30px;
+  }
+
+  .menu {
+    top: 35px;
+  }
+
+  .menu {
+    position: relative;
+    order: 2;
+    display: flex;
+    align-items: center;
+    flex: 0 0;
+    top: unset;
+    right: unset;
+    margin: 0 0 0 auto;
+  }
+
+  .menuButton {
+    align-self: center;
+    transform: rotate(90deg);
+  }
+}

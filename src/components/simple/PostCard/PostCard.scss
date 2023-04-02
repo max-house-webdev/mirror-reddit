@@ -1,0 +1,91 @@
+@import '../../../assets/scss//base/colors.scss';
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.card {
+  position: relative;
+  background-color: $white;
+  border-radius: 7px;
+  padding: 20px 20px 10px;
+  margin-bottom: 1.25rem;
+  display: flex;
+  flex-flow: row wrap;
+
+  & > * {
+    // flex: 1 1 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 100%;
+  }
+
+  & > * + * {
+    padding: 13px 0 0;
+  }
+
+  &:hover h2 button,
+  &:focus-within h2 button {
+    color: $orange;
+  }
+}
+
+.controls {
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.actions {
+  display: flex;
+  flex-flow: row nowrap;
+
+  & > * + * {
+    margin: 0 0 0 13px;
+  }
+}
+
+@media all and (min-width: 1024px) {
+  .card {
+    background-color: transparent;
+    flex-flow: row nowrap;
+    max-height: 107px;
+    padding: 0 40px;
+
+    & > * + * {
+      padding: 0;
+    }
+
+    & > * {
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+  }
+
+  .controls {
+    order: 3;
+    flex: 0 0;
+    margin: 0 0 0 24px;
+  }
+
+  .actions {
+    display: none;
+  }
+}
+
+@media all and (min-width: 1540px) {
+  .card {
+    padding: 20px 60px;
+    max-height: 147px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-within {
+      outline: 1px solid $greyD9;
+    }
+  }
+}

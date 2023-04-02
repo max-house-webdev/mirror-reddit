@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GenericList /> by default should match snapshot 1`] = `
+<Fragment>
+  <div
+    key="id-0"
+    onClick={[Function]}
+  >
+    text-0
+  </div>
+  <div
+    key="id-1"
+    onClick={[Function]}
+  >
+    text-1
+  </div>
+  <div
+    key="id-2"
+    onClick={[Function]}
+  >
+    text-1
+  </div>
+</Fragment>
+`;

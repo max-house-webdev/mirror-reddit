@@ -1,0 +1,48 @@
+$Error: crimson;
+$black: #333333;
+$orange: #cc6633;
+$green: #a4cc33;
+$whiteLightness: 100%;
+$white: hsl(0, 0%, ($whiteLightness));
+$greyF4: hsl(0, 0%, calc(($whiteLightness) - 4%));
+$greyF3: hsl(0, 0%, calc(($whiteLightness) - 5%));
+$greyEC: hsl(0, 0%, calc(($whiteLightness) - 7%));
+$greyD9: hsl(0, 0%, calc(($whiteLightness) - 15%));
+$greyC4: hsl(0, 0%, calc(($whiteLightness) - 23%));
+$grey99: hsl(0, 0%, calc(($whiteLightness) - 40%));
+$grey66: hsl(0, 0%, calc(($whiteLightness) - 60%));
+
+.error {
+  color: $Error;
+}
+
+.black {
+  color: $black;
+}
+.orange {
+  color: $orange;
+}
+.green {
+  color: $green;
+}
+.white {
+  color: $white;
+}
+.greyF4 {
+  color: $greyF4;
+}
+.greyF3 {
+  color: $greyF3;
+}
+.greyD9 {
+  color: $greyD9;
+}
+.greyC4 {
+  color: $greyC4;
+}
+.grey99 {
+  color: $grey99;
+}
+.grey66 {
+  color: $grey66;
+}

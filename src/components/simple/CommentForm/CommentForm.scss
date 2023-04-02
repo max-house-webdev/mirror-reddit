@@ -1,0 +1,50 @@
+@import '../../../assets/scss/base/colors.scss';
+@import '../../../assets/scss/base/visuallyHidden.scss';
+
+.commentForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  height: 89px;
+  width: 100%;
+
+  padding: 16px;
+
+  border: 1px solid $greyD9;
+  box-sizing: border-box;
+  border-radius: 3px 3px 0px 0px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: $grey99;
+  resize: none;
+
+  &:focus-visible {
+    outline: 1px solid $orange;
+  }
+}
+
+.input[aria-invalid] {
+  border-color: $Error;
+}
+
+.textContainer {
+  position: relative;
+}
+
+.usernameLabel {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  color: $orange;
+
+  & > span {
+    color: $grey99;
+  }
+}

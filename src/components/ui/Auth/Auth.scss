@@ -1,0 +1,68 @@
+@import '../../../assets/scss/base/colors.scss';
+
+.block {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  background-color: $white;
+  border-radius: 0 0 7px 7px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin: 0 0 38px;
+}
+
+.link {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &:focus-visible {
+    outline: $orange solid 1px;
+    outline-offset: 2px;
+  }
+
+  &:hover {
+    & span {
+      color: $orange;
+    }
+
+    & .userAvatarContainer {
+      box-shadow: 0 0 0 1px $orange;
+    }
+  }
+}
+
+.userAvatarContainer {
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  border-radius: 100%;
+  box-shadow: none;
+}
+
+.avatarImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.userNameContainer {
+  display: none;
+}
+
+@media all and (min-width: 1024px) {
+  .block {
+    padding: 0;
+    margin: 0 0 0 auto;
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    order: 3;
+  }
+
+  .userNameContainer {
+    display: flex;
+  }
+}

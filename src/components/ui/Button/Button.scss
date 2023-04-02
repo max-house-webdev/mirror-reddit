@@ -1,0 +1,70 @@
+@import '../../../assets/scss/base/colors.scss';
+
+%button {
+  padding: 1em 2em;
+
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 3px;
+
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}
+
+.primary {
+  @extend %button;
+
+  background: $orange;
+  color: $white;
+
+  &:hover {
+    background: linear-gradient(to right, lighten($orange, 20%), $orange);
+  }
+
+  &:focus-visible {
+    position: relative;
+    outline: none;
+
+    &::after {
+      $offset: 2;
+      $width: 1;
+      content: '';
+      position: absolute;
+      top: $offset * 1px;
+      left: $offset * 1px;
+
+      width: calc(100% - ($offset + $width) * $offset * 1px);
+      height: calc(100% - ($offset + $width) * $offset * 1px);
+
+      border: $width * 1px solid $white;
+      border-radius: 3px;
+    }
+  }
+}
+
+.secondary {
+  @extend %button;
+
+  border-color: $orange;
+
+  background: $white;
+  color: $orange;
+
+  &:hover {
+    background: linear-gradient(to right, $white, lighten($orange, 20%));
+  }
+
+  &:focus-visible {
+    outline: $orange 1px solid;
+    outline-offset: 2px;
+  }
+}
