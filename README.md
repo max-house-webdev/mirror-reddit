@@ -23,3 +23,9 @@
 
 - unofficial enzyme-adapter
   @wojtekmaj/enzyme-adapter-react-17
+
+---
+
+**Created by Max House**
+
+<max.house.web.development@gmail.com>
