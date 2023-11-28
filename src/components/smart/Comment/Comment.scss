@@ -1,0 +1,26 @@
+@import '../../../assets/scss/base/colors.scss';
+
+.item {
+  margin-bottom: 2.375rem;
+}
+
+.userBlock {
+  display: flex;
+  align-items: center;
+}
+
+.subreddit {
+  padding: 0.125rem 0.75rem;
+  background-color: $greyD9;
+}
+
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.p {
+  max-width: 100%;
+}

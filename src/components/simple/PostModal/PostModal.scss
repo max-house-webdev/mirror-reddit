@@ -1,0 +1,20 @@
+@import '../../../assets/scss/base/colors.scss';
+
+.content {
+  overflow-y: auto;
+}
+
+//?
+// .close {
+//   align-self: flex-end;
+//   width: 40px;
+//   height: 40px;
+//   margin: -24px;
+//   color: $black;
+// }
+
+.img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}

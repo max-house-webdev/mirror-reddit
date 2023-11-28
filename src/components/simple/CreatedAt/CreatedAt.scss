@@ -1,0 +1,17 @@
+@import '../../../assets/scss/base/colors.scss';
+
+.publishedLabel {
+  display: none;
+}
+
+.createdAt,
+.createdAt span {
+  color: $grey99;
+  padding: 0 0.375rem;
+}
+
+@media all and (min-width: 1024px) {
+  .publishedLabel {
+    display: inline;
+  }
+}

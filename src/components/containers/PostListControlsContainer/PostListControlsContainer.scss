@@ -1,0 +1,15 @@
+.postListControlsContainer {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+@media all and (min-width: 1024px) {
+  .postListControlsContainer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

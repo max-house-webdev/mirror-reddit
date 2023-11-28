@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "../out-tsc/spec",
+    "module": "commonjs",
+    "types": ["jest", "node"]
+  }
+}

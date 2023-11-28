@@ -1,0 +1,11 @@
+.cardList {
+  margin-bottom: 1em;
+
+  min-height: 100%;
+}
+
+@media all and (min-width: 1024px) {
+  .cardList {
+    padding: 40px 0;
+  }
+}

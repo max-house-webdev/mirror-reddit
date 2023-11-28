@@ -1,0 +1,27 @@
+@import '../../../assets/scss/base/colors.scss';
+
+.commentSorter {
+  display: flex;
+  padding-top: 2.1875rem;
+  padding-bottom: 0.8125rem;
+  border-bottom: 1px solid $grey99;
+}
+
+.label {
+  padding-right: 0.375rem;
+  color: $grey99;
+}
+
+.button {
+  color: $orange;
+
+  & > svg {
+    margin-left: 0.375rem;
+  }
+}
+
+.up {
+  & > svg {
+    transform: rotate(180deg);
+  }
+}
